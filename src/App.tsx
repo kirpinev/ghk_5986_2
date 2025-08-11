@@ -97,9 +97,7 @@ export const App = () => {
   const [isMoreClicked, setIsMoreClicked] = useState(false);
 
   const submit = () => {
-    window.gtag("event", "5986_get_sub", {
-      variant_name: "5986_2",
-    });
+    window.gtag("event", "5986_activate_2");
 
     LS.setItem(LSKeys.ShowThx, true);
     setThx(true);
@@ -167,7 +165,10 @@ export const App = () => {
               </Typography.Text>
               <Gap size={16} />
               <div
-                onClick={() => setIsMoreClicked(true)}
+                onClick={() => {
+                  setIsMoreClicked(true);
+                  window.gtag("event", "5986_participate_2");
+                }}
                 style={{
                   padding: "4px 16px",
                   backgroundColor: "black",
