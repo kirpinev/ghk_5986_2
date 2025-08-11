@@ -304,7 +304,7 @@ export const App = () => {
             >
               Банкинг без рекламы
             </Typography.TitleResponsive>
-            <Typography.Text view="primary-medium">
+            <Typography.Text view="primary-medium" color="secondary">
               Мы убрали все лишнее
             </Typography.Text>
           </div>
