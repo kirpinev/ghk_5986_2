@@ -178,7 +178,7 @@ export const App = () => {
                   width: "fit-content",
                 }}
               >
-                Как участвовать
+                Как это работает
               </div>
             </div>
             <img
